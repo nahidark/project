@@ -26,7 +26,10 @@ export default function Navbar() {
             {user ? (
               <UserMenu user={user} />
             ) : (
-              <Link to="/login" className="btn-primary">Login</Link>
+              <div className="flex items-center space-x-4">
+                <Link to="/login" className="nav-link">Login</Link>
+                <Link to="/signup" className="btn-primary">Sign Up</Link>
+              </div>
             )}
           </div>
         </div>
